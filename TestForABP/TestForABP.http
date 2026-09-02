@@ -1,0 +1,6 @@
+@TestForABP_HostAddress = http://localhost:5241
+
+GET {{TestForABP_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
