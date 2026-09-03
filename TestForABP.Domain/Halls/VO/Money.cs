@@ -6,8 +6,8 @@ namespace TestForABP.Domain.Halls.VO
 {
     public record Money
     {
-        public decimal Amount { get; private set; }
-        public string Currency {get; private set; } = "UAH";
+        public decimal Amount { get; init; }
+        public string Currency {get; init; } = "UAH";
 
         private Money(decimal amount, string currency = "UAH")
         {
