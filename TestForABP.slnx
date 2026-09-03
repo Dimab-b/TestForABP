@@ -1,3 +1,9 @@
 <Solution>
-  <Project Path="TestForABP/TestForABP.csproj" />
+  <Folder Name="/Элементы решения/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="TestForAbp.Application/TestForAbp.Application.csproj" />
+  <Project Path="TestForABP.Domain/TestForABP.Domain.csproj" />
+  <Project Path="TestForABP.Infrastructure/TestForABP.Infrastructure.csproj" />
+  <Project Path="TestForABP/TestForABP.Api.csproj" />
 </Solution>
