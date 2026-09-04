@@ -8,19 +8,14 @@ namespace TestForABP.Domain.Halls.VO
     {
         public int Value { get; private set; }
 
-        private Capacity(int value)
-        {
-            Value = value;
-        }
-
-        public static Capacity Create(int value)
+        public Capacity(int value)
         {
             if (value <= 0)
             {
                 throw new ArgumentException("Місткість залу повинна бути більшою за 0.");
             }
 
-            return new Capacity(value);
+            Value = value;
         }
     }
 }

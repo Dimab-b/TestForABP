@@ -12,7 +12,7 @@ namespace TestForABP.Domain.Halls
         public string Name { get; private set; }
         public Capacity Capacity { get; private set; }
         public Money BaseHourlyRate { get; private set; }
-        public uint Version { get; set; }
+        public uint Version { get; private set; }
 
         private readonly List<Amenity> _amenities = new();
         public IReadOnlyCollection<Amenity> Amenities => _amenities.AsReadOnly();
