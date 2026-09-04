@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TestForABP.Domain.Booking;
 using TestForABP.Domain.Common;
 using TestForABP.Domain.Halls;
 
@@ -15,6 +16,7 @@ namespace TestForABP.Infrastructure.Persistence
 
         public DbSet<Hall> Halls { get; set; } = null!;
         public DbSet<Amenity> Amenities { get; set; } = null!;
+        public DbSet<Booking> Bookings { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -9,20 +9,15 @@ namespace TestForABP.Domain.Halls.VO
         public decimal Amount { get; init; }
         public string Currency {get; init; } = "UAH";
 
-        private Money(decimal amount, string currency = "UAH")
-        {
-            Amount = amount;
-            Currency = currency;
-        }
-
-        public static Money Create(decimal amount, string currency = "UAH")
+        public Money(decimal amount, string currency = "UAH")
         {
             if (amount < 0)
             {
                 throw new ArgumentException("Сума не може бути від'ємною.");
             }
 
-            return new Money(amount, currency);
+            Amount = amount;
+            Currency = currency;
         }
     }
 }
